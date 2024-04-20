@@ -16,3 +16,5 @@ To use the Magic Transporter API, you can make requests to the `/magicItem` endp
   "name": "magic wand",
   "weight": 30
 }
+
+to see more implementation about the API there is a file called UNFI Solutions.postman_collection.json which is an exported collection that can be opened by postman itself
