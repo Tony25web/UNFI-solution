@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "ea2f923f-6988-47e4-91b2-1bb071c3a3ff",
+		"name": "UNFI Solutions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23940742"
+	},
+	"item": [
+		{
+			"name": "Add a new magic mover",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"weight_limit\":2100,\r\n     \"energy\":2500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http:localhost:4000/magicMover",
+					"host": [
+						"http:localhost"
+					],
+					"port": "4000",
+					"path": [
+						"magicMover"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Load magic mover with Items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\":\"the ID Of The Document\",\r\n    \"weight\":200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http:localhost:4000/magicMover/id",
+					"host": [
+						"http:localhost"
+					],
+					"port": "4000",
+					"path": [
+						"magicMover",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "start mission",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http:localhost:4000/start/id",
+					"host": [
+						"http:localhost"
+					],
+					"port": "4000",
+					"path": [
+						"start",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "end mission",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http:localhost:4000/end/id",
+					"host": [
+						"http:localhost"
+					],
+					"port": "4000",
+					"path": [
+						"end",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mission accomplished list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http:localhost:4000/missions/list",
+					"host": [
+						"http:localhost"
+					],
+					"port": "4000",
+					"path": [
+						"missions",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Magic Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"fire\",\r\n    \"weight\":30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/magicItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"magicItem"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
